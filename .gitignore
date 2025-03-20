@@ -1,1 +1,16 @@
 .aider*
+# OS-specific files
+*.txt
+Bin/
+# Python specific
+.Python
+__pycache__
+.NLL
+.d
+# Editor specific
+.swo
+.swp
+# Compiled Python
+*.pyc
+# Windows specific (onarm64_mac in 2025)
+*.nll
