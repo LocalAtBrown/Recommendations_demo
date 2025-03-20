@@ -1,4 +1,3 @@
-.aider*
 # OS-specific files
 *.txt
 Bin/
@@ -12,5 +11,25 @@ __pycache__
 .swp
 # Compiled Python
 *.pyc
-# Windows specific (onarm64_mac in 2025)
-*.nll
+# Virtual Environment (Python only)
+venv/
+env/
+ENV/
+# wheeler files
+wheeler*
+*- installed.cfg
+# Wheel directories
+*\.whl
+# Package installation directories
+*-site-packages
+# OS X specific
+.DS_Store
+
+# Python development tools
+blackrc
+brotli
+prot topping
+pythonshebangfixer
+sly
+tofty
+python-so.py
