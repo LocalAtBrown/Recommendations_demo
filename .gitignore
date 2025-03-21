@@ -1,0 +1,6 @@
+# Exclude python stuff
+**/__pycache__
+**/*.pyc
+
+# Exclude aider stuff
+.aider*
