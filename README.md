@@ -2,10 +2,12 @@
 
 A scratch repo for playing out some initial implementations of a recommendation algorithm
 
+This is a [`uv` project](https://docs.astral.sh/uv/guides/projects/). Development, both local terminal and docker
+are passed through `uv`.
 
 ## Initialization
 
-This project is managed as a [`uv` project](https://docs.astral.sh/uv/guides/projects/).
+This project is managed as .
 
 To run the application outside of docker:
 ```zsh
@@ -19,11 +21,10 @@ To run various
 
 Project maintainence is passed through `uv`
 
+To install pre-commit hooks:
 ```
 uv run pre-commit install
 ```
-
-`rec-demo` dependencies are managed within the `pyproject.toml` file.
 
 To add a new dependency:
 ```
