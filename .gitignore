@@ -4,3 +4,15 @@
 
 # Exclude aider stuff
 .aider*
+
+# Notebook stuff
+.ipynb_checkpoints
+
+# macOS stuff
+.DS_Store
+
+# MovieLens database
+data/ml-100k
+
+# GA4 database
+data/ga4-dfp

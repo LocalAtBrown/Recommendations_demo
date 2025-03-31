@@ -7,6 +7,14 @@ This is a [`uv` project](https://docs.astral.sh/uv/guides/projects/).
 ## Quickstart
 
 
+## Notebook quickstart
+
+https://docs.astral.sh/uv/guides/integration/jupyter/#using-jupyter-from-vs-code
+
+We're still working on our development environment so for now, we're using the `.venv` for our python kernal
+
+
+
 ## Package management & maintenance
 
 To install pre-commit hooks:
