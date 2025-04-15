@@ -6,7 +6,7 @@ FROM ghcr.io/astral-sh/uv:bookworm-slim AS builder
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
 
 # Configure the Python directory so it is consistent
-ENV UV_PYTHON_INSTALL_DIR /python
+ENV UV_PYTHON_INSTALL_DIR=/python
 
 # Only use the managed Python version
 ENV UV_PYTHON_PREFERENCE=only-managed
@@ -32,11 +32,12 @@ COPY --from=builder --chown=python:python /python /python
 # Copy the application from the builder
 COPY --from=builder --chown=app:app /app /app
 
+# Set working directory to /app
+WORKDIR /app
+
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-# Uncomment to activate the FastAPI application
-# # Run the FastAPI application by default
-# CMD ["fastapi", "dev", "--host", "0.0.0.0", "/app/src/uv_docker_example"]
-
-CMD ["rec-demo"]
+# Run the FastAPI application
+# "dev" denotes a development server. Swap with "run" for production
+CMD ["fastapi", "dev",  "/app/app/main.py", "--port", "8000", "--host", "0.0.0.0"]

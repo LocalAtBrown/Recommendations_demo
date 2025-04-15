@@ -5,9 +5,9 @@ services:
     build: .
 
     # Uncomment to use the FastAPI application
-    # # Host the FastAPI application on port 8000
-    # ports:
-    #   - "8000:8000"
+    # Host the FastAPI application on port 8000
+    ports:
+      - "8000:8000"
 
     develop:
       # Create a `watch` configuration to update the app
