@@ -168,8 +168,8 @@ cython_debug/
 # macOS stuff
 .DS_Store
 
-# MovieLens database
-data/ml-100k
+# Model data
+app/models/data/*
 
-# GA4 database
-data/ga4-dfp
+# Model content
+app/models/models/*
